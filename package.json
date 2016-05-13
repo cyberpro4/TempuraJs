@@ -1,0 +1,22 @@
+{
+  "name": "tempurajs",
+  
+  "version": "0.1.0",
+  
+  "decription" : "Simple easy-to-use javascript library for html templates",
+  
+  "keywords" : [ "jquery" , "html" , "templates" ],
+  
+  "license" : "MIT",
+  
+  "repository" : { 
+	"type" : "git", 
+	"url" : "https://github.com/cyberpro4/TempuraJs.git"
+  },
+  
+  "dependencies": {
+    "minify": "^2.0.3",
+	"browserify": ""
+  }
+  
+}

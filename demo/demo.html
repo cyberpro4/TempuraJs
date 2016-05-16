@@ -1,0 +1,50 @@
+<html>
+
+	<head>
+	
+		<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+		<script src="../bin/tempura.0.1.0.min.js"></script>
+		
+		<script>
+		
+			var items = [
+				{ content: 'Apple' },
+				{ content: 'Banana' },
+				{ content: 'Kiwi' },
+				{ content: 'Orange' },
+			];
+			
+			$(document).ready( function(){
+			
+				$('#clear').click( function(){
+					// Clear all template entries
+					TempuraJs.clear( 'demo1' );
+				});
+				
+				$('#all').click( function(){
+					// Add a full array of entries
+					TempuraJs.set( 'demo1' , items );
+				});
+				
+				$('#one').click( function(){
+					//Randomly insert one item
+					TempuraJs.insert( 'demo1' , items[ Math.floor( Math.random() * items.length ) ] );
+				});
+			});
+						
+		</script>
+	</head>
+	
+	<body>
+	
+		<ul>
+			<li data-template-name="demo1">##content##</li>
+		</ul>
+		
+		<button id="clear">Clear</button>
+		<button id="all">Set all</button>
+		<button id="one">Add one</button>
+	
+	</body>
+	
+</html>
